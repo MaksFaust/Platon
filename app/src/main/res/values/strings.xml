@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Platon</string>
+    <string name="enter_your_login">Enter your login</string>
+    <string name="hint_pass">********</string>
+    <string name="hint_login">student</string>
+    <string name="sign_in">Sign In</string>
+</resources>
