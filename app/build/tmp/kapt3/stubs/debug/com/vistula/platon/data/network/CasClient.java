@@ -2,10 +2,8 @@ package com.vistula.platon.data.network;
 
 import java.lang.System;
 
-@kotlin.Metadata(mv = {1, 1, 16}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u000f\n\u0002\u0010\u000b\n\u0002\b\u0007\u0018\u0000 \u001a2\u00020\u0001:\u0001\u001aB\u0005\u00a2\u0006\u0002\u0010\u0002J \u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00042\u0006\u0010\u0011\u001a\u00020\u00042\u0006\u0010\u0012\u001a\u00020\u0004H\u0002J\u0006\u0010\u0013\u001a\u00020\u0014J\u0006\u0010\u0015\u001a\u00020\u0004J\u0006\u0010\u0016\u001a\u00020\u0004J\u0006\u0010\u0017\u001a\u00020\u0004J\u0006\u0010\u0018\u001a\u00020\u0004J\u0006\u0010\u0019\u001a\u00020\u0004R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006R\u0014\u0010\u000b\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0006R\u0014\u0010\r\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u0006\u00a8\u0006\u001b"}, d2 = {"Lcom/vistula/platon/data/network/CasClient;", "", "()V", "TAG_ERROR_WITH_BODY", "", "getTAG_ERROR_WITH_BODY", "()Ljava/lang/String;", "TAG_EVENTID", "getTAG_EVENTID", "TAG_EXECUTION", "getTAG_EXECUTION", "TAG_LT", "getTAG_LT", "TAG_SERVICE", "getTAG_SERVICE", "cutOff", "str", "prefix", "sufix", "getBody", "", "getEventId", "getExecution", "getLT", "getService", "getSubmit", "Companion", "app_debug"})
+@kotlin.Metadata(mv = {1, 1, 16}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\r\n\u0002\u0010\u000b\n\u0002\b\u0007\u0018\u0000 \u00182\u00020\u0001:\u0001\u0018B\u0005\u00a2\u0006\u0002\u0010\u0002J \u0010\r\u001a\u00020\u00042\u0006\u0010\u000e\u001a\u00020\u00042\u0006\u0010\u000f\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u0004H\u0002J\u0006\u0010\u0011\u001a\u00020\u0012J\u0006\u0010\u0013\u001a\u00020\u0004J\u0006\u0010\u0014\u001a\u00020\u0004J\u0006\u0010\u0015\u001a\u00020\u0004J\u0006\u0010\u0016\u001a\u00020\u0004J\u0006\u0010\u0017\u001a\u00020\u0004R\u0014\u0010\u0003\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006R\u0014\u0010\u0007\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\b\u0010\u0006R\u0014\u0010\t\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u0006R\u0014\u0010\u000b\u001a\u00020\u0004X\u0086D\u00a2\u0006\b\n\u0000\u001a\u0004\b\f\u0010\u0006\u00a8\u0006\u0019"}, d2 = {"Lcom/vistula/platon/data/network/CasClient;", "", "()V", "TAG_EVENTID", "", "getTAG_EVENTID", "()Ljava/lang/String;", "TAG_EXECUTION", "getTAG_EXECUTION", "TAG_LT", "getTAG_LT", "TAG_SERVICE", "getTAG_SERVICE", "cutOff", "str", "prefix", "sufix", "getBody", "", "getEventId", "getExecution", "getLT", "getService", "getSubmit", "Companion", "app_debug"})
 public final class CasClient {
-    @org.jetbrains.annotations.NotNull()
-    private final java.lang.String TAG_ERROR_WITH_BODY = "Can`t execute request to CAS";
     @org.jetbrains.annotations.NotNull()
     private final java.lang.String TAG_LT = "name=\"lt\" value=";
     @org.jetbrains.annotations.NotNull()
@@ -16,11 +14,6 @@ public final class CasClient {
     private final java.lang.String TAG_SERVICE = "?service=";
     private static java.lang.String body;
     public static final com.vistula.platon.data.network.CasClient.Companion Companion = null;
-    
-    @org.jetbrains.annotations.NotNull()
-    public final java.lang.String getTAG_ERROR_WITH_BODY() {
-        return null;
-    }
     
     @org.jetbrains.annotations.NotNull()
     public final java.lang.String getTAG_LT() {

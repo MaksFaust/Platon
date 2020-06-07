@@ -1,5 +1,6 @@
 package com.vistula.platon.ui.auth
 
+import android.util.Log
 import android.view.View
 import androidx.lifecycle.ViewModel
 import com.vistula.platon.data.repositories.UserRepository

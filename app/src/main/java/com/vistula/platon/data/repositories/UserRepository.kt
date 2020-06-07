@@ -16,7 +16,6 @@ import retrofit2.Callback
 
 class UserRepository {
     fun userLogin(username : String, password : String) : LiveData<String>{
-
         val loginResponse = MutableLiveData<String>()
         Single.create(SingleOnSubscribe<Boolean>{ emitter -> emitter.onSuccess(CasClient().getBody()) })
             .subscribeOn(Schedulers.io())
@@ -34,10 +33,12 @@ class UserRepository {
                             call: Call<ResponseBody>,
                             response: Response<ResponseBody>
                         ) {
-                            if(response.isSuccessful)
+                            if(response.isSuccessful){
+//                                loginResponse.value = response.headers().values("Set-Cookie").toString()
                                 loginResponse.value = response.body()?.string()
+                             }
                             else
-                                loginResponse.value = response.errorBody()?.string()
+                                loginResponse.value = response.code().toString()
                         }
 
                     })}

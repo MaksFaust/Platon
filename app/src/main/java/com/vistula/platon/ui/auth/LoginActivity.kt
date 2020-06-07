@@ -2,6 +2,7 @@ package com.vistula.platon.ui.auth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
@@ -29,7 +30,7 @@ class LoginActivity : AppCompatActivity(), AuthListener {
     }
 
     override fun onSuccess(it: LiveData<String>) {
-        it.observe(this, Observer { toast(it) })
+        it.observe(this, Observer { Log.println(Log.DEBUG, "mamma", it)})
     }
 
     override fun onFailure(message: String) {
